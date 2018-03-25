@@ -24,7 +24,7 @@ config :chat_replay_api, ChatReplayApiWeb.Endpoint,
 config :logger, level: :info
 
 # Configure your database
-config :chat_replay_api, ChatReplayApiWeb.Repo,
+config :chat_replay_api, ChatReplayApi.Repo,
   adapter: Ecto.Adapters.Postgres,
   url: System.get_env("DATABASE_URL"),
   pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
