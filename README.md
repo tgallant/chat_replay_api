@@ -10,7 +10,7 @@ https://chat-replay-api.herokuapp.com/
 
 `POST /api/messages {body: 'string', replay_time: 'float', topic: 'string', user: 'string'}`
 ```
-$ http POST https://dry-lake-68391.herokuapp.com/api/messages body=hi456 replay_time=6.7 topic=a1b2c3 user=someone
+$ http POST https://chat-replay-api.herokuapp.com/api/messages body=hi456 replay_time=6.7 topic=a1b2c3 user=someone
 HTTP/1.1 201 Created
 Cache-Control: max-age=0, private, must-revalidate
 Connection: keep-alive
@@ -38,7 +38,7 @@ X-Request-Id: 5bd20b42-ce3b-43d0-9fa6-4a5756bf4ff8
 
 `GET /api/messages/:topic`
 ```
-$ http GET https://dry-lake-68391.herokuapp.com/api/messages/a1b2c3
+$ http GET https://chat-replay-api.herokuapp.com/api/messages/a1b2c3
 HTTP/1.1 200 OK
 Cache-Control: max-age=0, private, must-revalidate
 Connection: keep-alive
